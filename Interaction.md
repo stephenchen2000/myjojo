@@ -12,9 +12,9 @@
 
 ---
 
-## 步骤 5: 编写交互测试 Story
+## 步骤 5: 编写 Button 交互测试
 
-### 基础示例（src/components/Button.stories.jsx）
+### src/components/Button.stories.jsx
 
 ```jsx
 import { within, expect, userEvent, fn } from '@storybook/test';
@@ -71,9 +71,77 @@ export const DisabledInteraction = {
 };
 ```
 
-### 进阶示例 - 表单输入测试
+---
+
+## 步骤 6: 编写 Task 交互测试
+
+### src/components/Task.stories.jsx
 
 ```jsx
+import { fn, expect, userEvent, within } from '@storybook/test';
+import Task from './Task';
+
+export default {
+  component: Task,
+  title: 'Components/Task',
+  args: {
+    onArchiveTask: fn(),
+    onTogglePinTask: fn(),
+    onEditTitle: fn(),
+  },
+};
+
+// ✅ 默认状态 - 测试归档和固定功能
+export const Default = {
+  args: {
+    task: {
+      id: '1',
+      title: 'Buy milk',
+      state: 'TASK_INBOX',
+    },
+  },
+  play: async ({ args, canvasElement }) => {
+    const canvas = within(canvasElement);
+    
+    // 测试任务标题显示
+    const input = canvas.getByDisplayValue('Buy milk');
+    await expect(input).toBeInTheDocument();
+    
+    // 测试归档按钮
+    const archiveButton = canvas.getByLabelText(/archiveButton-1/);
+    await userEvent.click(archiveButton);
+    await expect(args.onArchiveTask).toHaveBeenCalledWith('1');
+    
+    // 测试固定按钮
+    const pinButton = canvas.getByLabelText(/pin/);
+    await userEvent.click(pinButton);
+    await expect(args.onTogglePinTask).toHaveBeenCalledWith('1');
+  },
+};
+
+// ✅ 归档状态 - 验证固定按钮不显示
+export const Archived = {
+  args: {
+    task: {
+      id: '3',
+      title: 'Write schema for account menu',
+      state: 'TASK_ARCHIVED',
+    },
+  },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    
+    // 验证归档状态样式
+    const task = canvas.getByRole('listitem');
+    await expect(task).toHaveClass(/TASK_ARCHIVED/);
+    
+    // 验证固定按钮不显示（归档后不能再固定）
+    const pinButton = canvas.queryByLabelText(/pin/);
+    expect(pinButton).not.toBeInTheDocument();
+  },
+};
+
+// ✅ 编辑标题 - 测试输入功能
 export const EditTitle = {
   args: {
     task: {
@@ -81,9 +149,9 @@ export const EditTitle = {
       title: 'Original title',
       state: 'TASK_INBOX',
     },
-    onEditTitle: fn(),
   },
   play: async ({ args, canvasElement }) => {
+    // 重置 mock 函数
     args.onEditTitle.mockClear();
     
     const canvas = within(canvasElement);
@@ -101,7 +169,7 @@ export const EditTitle = {
 
 ---
 
-## 步骤 6: 添加测试脚本（package.json）
+## 步骤 7: 添加测试脚本（package.json）
 
 ```json
 {
@@ -113,7 +181,7 @@ export const EditTitle = {
 
 ---
 
-## 步骤 7: 运行测试
+## 步骤 8: 运行测试
 
 ```bash
 npm run test:interaction
@@ -166,12 +234,13 @@ import { within, expect, userEvent, fn } from '@storybook/test';
 
 ## 📋 快速检查清单
 
-| 步骤 | 内容 | 说明 |
-|------|------|------|
-| 1-4 | 基础设置 | 参考 Render.md |
-| 5 | 编写 Story | 添加 `play` 函数 |
-| 6 | 配置脚本 | 添加 `test:interaction` |
-| 7 | 运行测试 | `npm run test:interaction` |
+| 步骤 | 内容 | 完成 |
+|------|------|:----:|
+| 1-4 | 基础设置（参考 Render.md） | ☐ |
+| 5 | 编写 Button 交互测试 | ☐ |
+| 6 | 编写 Task 交互测试 | ☐ |
+| 7 | 配置 `test:interaction` 脚本 | ☐ |
+| 8 | 运行测试验证 | ☐ |
 
 ---
 
@@ -182,4 +251,12 @@ import { within, expect, userEvent, fn } from '@storybook/test';
 3. **异步等待**：所有断言和操作都要用 `await`
 
 > 💡 **提示**：交互测试会在 Storybook 的 Interactions 面板中显示每一步的执行结果，方便调试。
+
+---
+
+## ⏭️ 下一步
+
+交互测试完成后，进入可访问性测试：
+
+→ [a11y.md](./a11y.md)
 
