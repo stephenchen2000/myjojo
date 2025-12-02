@@ -145,84 +145,11 @@ export default preview;
 
 ---
 
-## 步骤 7: 编写渲染测试 Stories
+## 步骤 7: 运行渲染测试
 
-渲染测试的 Story **不需要 `play` 函数**，只需定义 `args`：
-
-### Button 渲染测试（src/components/Button.stories.jsx）
-
-```jsx
-import Button from './Button';
-
-export default {
-  component: Button,
-  title: 'Components/Button',
-  tags: ['autodocs'],
-};
-
-// ✅ 渲染测试 - 只有 args，没有 play 函数
-export const Primary = {
-  args: { label: 'Primary Button', variant: 'primary' },
-};
-
-export const Secondary = {
-  args: { label: 'Secondary Button', variant: 'secondary' },
-};
-
-export const Danger = {
-  args: { label: 'Danger Button', variant: 'danger' },
-};
-
-export const Small = {
-  args: { label: 'Small', size: 'small' },
-};
-
-export const Large = {
-  args: { label: 'Large', size: 'large' },
-};
-
-export const Disabled = {
-  args: { label: 'Disabled', disabled: true },
-};
-```
-
-### Task 渲染测试（src/components/Task.stories.jsx）
-
-```jsx
-import { fn } from '@storybook/test';
-import Task from './Task';
-
-export default {
-  component: Task,
-  title: 'Components/Task',
-  args: {
-    onArchiveTask: fn(),
-    onTogglePinTask: fn(),
-    onEditTitle: fn(),
-  },
-};
-
-// ✅ 渲染测试 - 验证不同状态的显示
-export const Pinned = {
-  args: {
-    task: { id: '2', title: 'QA dropdown', state: 'TASK_PINNED' },
-  },
-};
-
-export const LongTitle = {
-  args: {
-    task: { 
-      id: '4', 
-      title: 'This task name is extremely long and should be handled properly', 
-      state: 'TASK_INBOX' 
-    },
-  },
-};
-```
-
----
-
-## 步骤 8: 运行渲染测试
+> 💡 **说明**：渲染测试直接复用 [Developer.md](./Developer.md) 中创建的 Stories 文件。
+> 
+> 开发阶段的 Stories（只有 `args`，没有 `play` 函数）就是渲染测试的测试用例。
 
 ```bash
 npm run test:render
@@ -261,8 +188,9 @@ npm run test:render
 | 4 | 配置 .storybook/vitest.setup.ts | ☐ |
 | 5 | 配置 .storybook/preview.ts | ☐ |
 | 6 | 添加 test:render 脚本 | ☐ |
-| 7 | 编写渲染 Stories（无 play 函数） | ☐ |
-| 8 | 运行测试验证 | ☐ |
+| 7 | 运行测试验证 | ☐ |
+
+> 📝 **注意**：Stories 文件在开发阶段已创建，渲染测试直接复用。
 
 ---
 
