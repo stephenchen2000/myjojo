@@ -1,0 +1,170 @@
+name: 'UI Tests'
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  # 安装和缓存依赖
+  install-cache:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 代码
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+        
+      - name: 设置 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          
+      - name: 缓存依赖
+        uses: actions/cache@v4
+        id: cache
+        with:
+          path: |
+            ~/.cache/ms-playwright
+            node_modules
+          key: ${{ runner.os }}-deps-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-deps-
+            
+      - name: 安装依赖
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: npm ci --legacy-peer-deps
+        
+      - name: 安装 Playwright
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: npx playwright install --with-deps chromium
+
+  # 1️⃣ 交互测试（play 函数）
+  test-interaction:
+    runs-on: ubuntu-latest
+    needs: install-cache
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          
+      - name: 恢复缓存
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/ms-playwright
+            node_modules
+          key: ${{ runner.os }}-deps-${{ hashFiles('**/package-lock.json') }}
+          
+      - name: 🖱️ 运行交互测试
+        run: npm run test:interaction
+
+  # 2️⃣ 渲染测试（基础显示）
+  test-render:
+    runs-on: ubuntu-latest
+    needs: install-cache
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          
+      - name: 恢复缓存
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/ms-playwright
+            node_modules
+          key: ${{ runner.os }}-deps-${{ hashFiles('**/package-lock.json') }}
+          
+      - name: 📄 运行渲染测试
+        run: npm run test:render
+
+  # 3️⃣ 可访问性测试（a11y）
+  test-a11y:
+    runs-on: ubuntu-latest
+    needs: install-cache
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          
+      - name: 恢复缓存
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/ms-playwright
+            node_modules
+          key: ${{ runner.os }}-deps-${{ hashFiles('**/package-lock.json') }}
+          
+      - name: ♿ 运行可访问性测试
+        run: npm run test:a11y
+
+  # 4️⃣ Chromatic 可视化回归测试
+  test-chromatic:
+    runs-on: ubuntu-latest
+    needs: install-cache
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          
+      - name: 恢复缓存
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-deps-${{ hashFiles('**/package-lock.json') }}
+          
+      - name: 🎨 运行 Chromatic 测试
+        run: npm run chromatic
+        env:
+          CHROMATIC_PROJECT_TOKEN: chpt_fa03fefd88a5bcd
+
+  # 5️⃣ E2E 端到端测试
+  test-e2e:
+    runs-on: ubuntu-latest
+    needs: install-cache
+    strategy:
+      matrix:
+        browser: [chromium, firefox, webkit]
+    steps:
+      - uses: actions/checkout@v4
+        
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          
+      - name: 恢复缓存
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/ms-playwright
+            node_modules
+          key: ${{ runner.os }}-deps-${{ hashFiles('**/package-lock.json') }}
+          
+      - name: 🎭 运行 E2E 测试 - ${{ matrix.browser }}
+        run: npm run test:e2e -- --project=${{ matrix.browser }}
+        
+      - name: 上传测试报告
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: playwright-report-${{ matrix.browser }}
+          path: playwright-report/
+          retention-days: 30

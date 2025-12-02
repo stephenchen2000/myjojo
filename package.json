@@ -9,6 +9,7 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_fa03fefd88a5bcd",
     "test": "vitest --project=storybook",
     "test:ui": "vitest --project=storybook --ui",
     "test:all": "echo 🎯 Running all tests (render + interaction + a11y)... && vitest --project=storybook --run --reporter=verbose",
@@ -16,7 +17,13 @@
     "test:render": "echo 📄 Running render tests only... && cross-env VITE_SKIP_A11Y=true vitest --project=storybook --run --reporter=verbose --testNamePattern=\"^((?!Interaction|Edit|Archived|Default).)*$\"",
     "test:a11y": "echo ♿ Running a11y tests only (no play functions)... && cross-env VITE_SKIP_PLAY=true vitest --project=storybook --run --reporter=verbose",
     "test:coverage": "vitest --project=storybook --coverage",
-    "test:watch": "vitest --project=storybook --reporter=verbose"
+    "test:watch": "vitest --project=storybook --reporter=verbose",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:e2e:headed": "playwright test --headed",
+    "test:e2e:debug": "playwright test --debug",
+    "test:e2e:report": "playwright show-report",
+    "test:e2e:codegen": "playwright codegen http://localhost:5173"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^4.1.3",
@@ -38,6 +45,7 @@
     "@vitest/ui": "^4.0.14",
     "axe-core": "^4.11.0",
     "axe-playwright": "^2.2.2",
+    "chromatic": "^13.3.4",
     "cross-env": "^10.1.0",
     "playwright": "^1.57.0",
     "storybook": "^10.1.2",

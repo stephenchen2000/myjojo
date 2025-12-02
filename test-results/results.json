@@ -1,0 +1,878 @@
+{
+  "config": {
+    "configFile": "D:\\python\\my-app\\playwright.config.ts",
+    "rootDir": "D:/python/my-app/e2e",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 6
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "D:/python/my-app/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/python/my-app/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.{ts,tsx}"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/python/my-app/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/python/my-app/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.{ts,tsx}"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/python/my-app/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/python/my-app/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.{ts,tsx}"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.57.0",
+    "workers": 6,
+    "webServer": {
+      "command": "npm run dev",
+      "url": "http://localhost:5173",
+      "reuseExistingServer": true,
+      "timeout": 120000
+    }
+  },
+  "suites": [
+    {
+      "title": "button.spec.ts",
+      "file": "button.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Button 组件 E2E 测试",
+          "file": "button.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "应该显示按钮",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1015,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T02:35:00.956Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "853d4d75579e0323ed08-3503c24a02fcaf243f6b",
+              "file": "button.spec.ts",
+              "line": 8,
+              "column": 3
+            },
+            {
+              "title": "应该能够点击按钮",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1008,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T02:35:00.961Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "853d4d75579e0323ed08-0e25c27397d997e84f92",
+              "file": "button.spec.ts",
+              "line": 17,
+              "column": 3
+            },
+            {
+              "title": "按钮应该有正确的样式",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1099,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T02:35:00.961Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "853d4d75579e0323ed08-93de5c123c2b9a6db6c6",
+              "file": "button.spec.ts",
+              "line": 27,
+              "column": 3
+            },
+            {
+              "title": "应该显示按钮",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4653,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T02:35:03.711Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "853d4d75579e0323ed08-1850197d6503c30d02c9",
+              "file": "button.spec.ts",
+              "line": 8,
+              "column": 3
+            },
+            {
+              "title": "应该能够点击按钮",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 5095,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T02:35:03.804Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "853d4d75579e0323ed08-1994c4673cb8865ecfca",
+              "file": "button.spec.ts",
+              "line": 17,
+              "column": 3
+            },
+            {
+              "title": "按钮应该有正确的样式",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4839,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T02:35:03.805Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "853d4d75579e0323ed08-37e3dbab2ac9e9996da2",
+              "file": "button.spec.ts",
+              "line": 27,
+              "column": 3
+            },
+            {
+              "title": "应该显示按钮",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2916,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T02:35:12.903Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "853d4d75579e0323ed08-7c2e5e0b9cb47a5abff0",
+              "file": "button.spec.ts",
+              "line": 8,
+              "column": 3
+            },
+            {
+              "title": "应该能够点击按钮",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 13,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3108,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T02:35:13.482Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "853d4d75579e0323ed08-5b1b5fc060d45959d09a",
+              "file": "button.spec.ts",
+              "line": 17,
+              "column": 3
+            },
+            {
+              "title": "按钮应该有正确的样式",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2950,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T02:35:14.047Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "853d4d75579e0323ed08-a9e9d80d3cadce2bdc69",
+              "file": "button.spec.ts",
+              "line": 27,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "task.spec.ts",
+      "file": "task.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Task 组件 E2E 测试",
+          "file": "task.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "应该显示任务列表",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 1033,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T02:35:00.997Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f0b74b39af6b2892d277-b562677084a9ef810115",
+              "file": "task.spec.ts",
+              "line": 8,
+              "column": 3
+            },
+            {
+              "title": "应该能够编辑任务标题",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "failed",
+                      "duration": 6152,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.list-item input[type=\"text\"]').first()\nExpected: \u001b[32m\"更新的任务标题\"\u001b[39m\nReceived: \u001b[31m\"Learn Storybook\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.list-item input[type=\"text\"]').first()\u001b[22m\n\u001b[2m    9 × locator resolved to <input type=\"text\" id=\"title-1\" name=\"title\" value=\"Learn Storybook\" placeholder=\"Input title\"/>\u001b[22m\n\u001b[2m      - unexpected value \"Learn Storybook\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.list-item input[type=\"text\"]').first()\nExpected: \u001b[32m\"更新的任务标题\"\u001b[39m\nReceived: \u001b[31m\"Learn Storybook\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.list-item input[type=\"text\"]').first()\u001b[22m\n\u001b[2m    9 × locator resolved to <input type=\"text\" id=\"title-1\" name=\"title\" value=\"Learn Storybook\" placeholder=\"Input title\"/>\u001b[22m\n\u001b[2m      - unexpected value \"Learn Storybook\"\u001b[22m\n\n    at D:\\python\\my-app\\e2e\\task.spec.ts:29:29",
+                        "location": {
+                          "file": "D:\\python\\my-app\\e2e\\task.spec.ts",
+                          "column": 29,
+                          "line": 29
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 27 |\u001b[39m     \n \u001b[90m 28 |\u001b[39m     \u001b[90m// 验证新标题\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 |\u001b[39m     \u001b[36mawait\u001b[39m expect(taskInput)\u001b[33m.\u001b[39mtoHaveValue(\u001b[32m'更新的任务标题'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 30 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 31 |\u001b[39m\n \u001b[90m 32 |\u001b[39m   test(\u001b[32m'应该能够点击固定按钮'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\python\\my-app\\e2e\\task.spec.ts",
+                            "column": 29,
+                            "line": 29
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.list-item input[type=\"text\"]').first()\nExpected: \u001b[32m\"更新的任务标题\"\u001b[39m\nReceived: \u001b[31m\"Learn Storybook\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.list-item input[type=\"text\"]').first()\u001b[22m\n\u001b[2m    9 × locator resolved to <input type=\"text\" id=\"title-1\" name=\"title\" value=\"Learn Storybook\" placeholder=\"Input title\"/>\u001b[22m\n\u001b[2m      - unexpected value \"Learn Storybook\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 27 |\u001b[39m     \n \u001b[90m 28 |\u001b[39m     \u001b[90m// 验证新标题\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 |\u001b[39m     \u001b[36mawait\u001b[39m expect(taskInput)\u001b[33m.\u001b[39mtoHaveValue(\u001b[32m'更新的任务标题'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 30 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 31 |\u001b[39m\n \u001b[90m 32 |\u001b[39m   test(\u001b[32m'应该能够点击固定按钮'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at D:\\python\\my-app\\e2e\\task.spec.ts:29:29\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T02:35:00.962Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\python\\my-app\\test-results\\task-Task-组件-E2E-测试-应该能够编辑任务标题-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\python\\my-app\\test-results\\task-Task-组件-E2E-测试-应该能够编辑任务标题-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\python\\my-app\\test-results\\task-Task-组件-E2E-测试-应该能够编辑任务标题-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\python\\my-app\\e2e\\task.spec.ts",
+                        "column": 29,
+                        "line": 29
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "f0b74b39af6b2892d277-7d380e660369b40021bb",
+              "file": "task.spec.ts",
+              "line": 18,
+              "column": 3
+            },
+            {
+              "title": "应该能够点击固定按钮",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 1122,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T02:35:01.025Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f0b74b39af6b2892d277-1fd8a17d8f352eb24aa0",
+              "file": "task.spec.ts",
+              "line": 32,
+              "column": 3
+            },
+            {
+              "title": "应该显示任务列表",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 4870,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T02:35:03.897Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f0b74b39af6b2892d277-4e9d9e3f091442aff2cb",
+              "file": "task.spec.ts",
+              "line": 8,
+              "column": 3
+            },
+            {
+              "title": "应该能够编辑任务标题",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 5,
+                      "status": "failed",
+                      "duration": 9203,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.list-item input[type=\"text\"]').first()\nExpected: \u001b[32m\"更新的任务标题\"\u001b[39m\nReceived: \u001b[31m\"Learn Storybook\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.list-item input[type=\"text\"]').first()\u001b[22m\n\u001b[2m    9 × locator resolved to <input type=\"text\" id=\"title-1\" name=\"title\" value=\"Learn Storybook\" placeholder=\"Input title\"/>\u001b[22m\n\u001b[2m      - unexpected value \"Learn Storybook\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.list-item input[type=\"text\"]').first()\nExpected: \u001b[32m\"更新的任务标题\"\u001b[39m\nReceived: \u001b[31m\"Learn Storybook\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.list-item input[type=\"text\"]').first()\u001b[22m\n\u001b[2m    9 × locator resolved to <input type=\"text\" id=\"title-1\" name=\"title\" value=\"Learn Storybook\" placeholder=\"Input title\"/>\u001b[22m\n\u001b[2m      - unexpected value \"Learn Storybook\"\u001b[22m\n\n    at D:\\python\\my-app\\e2e\\task.spec.ts:29:29",
+                        "location": {
+                          "file": "D:\\python\\my-app\\e2e\\task.spec.ts",
+                          "column": 29,
+                          "line": 29
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 27 |\u001b[39m     \n \u001b[90m 28 |\u001b[39m     \u001b[90m// 验证新标题\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 |\u001b[39m     \u001b[36mawait\u001b[39m expect(taskInput)\u001b[33m.\u001b[39mtoHaveValue(\u001b[32m'更新的任务标题'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 30 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 31 |\u001b[39m\n \u001b[90m 32 |\u001b[39m   test(\u001b[32m'应该能够点击固定按钮'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\python\\my-app\\e2e\\task.spec.ts",
+                            "column": 29,
+                            "line": 29
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.list-item input[type=\"text\"]').first()\nExpected: \u001b[32m\"更新的任务标题\"\u001b[39m\nReceived: \u001b[31m\"Learn Storybook\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.list-item input[type=\"text\"]').first()\u001b[22m\n\u001b[2m    9 × locator resolved to <input type=\"text\" id=\"title-1\" name=\"title\" value=\"Learn Storybook\" placeholder=\"Input title\"/>\u001b[22m\n\u001b[2m      - unexpected value \"Learn Storybook\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 27 |\u001b[39m     \n \u001b[90m 28 |\u001b[39m     \u001b[90m// 验证新标题\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 |\u001b[39m     \u001b[36mawait\u001b[39m expect(taskInput)\u001b[33m.\u001b[39mtoHaveValue(\u001b[32m'更新的任务标题'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 30 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 31 |\u001b[39m\n \u001b[90m 32 |\u001b[39m   test(\u001b[32m'应该能够点击固定按钮'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at D:\\python\\my-app\\e2e\\task.spec.ts:29:29\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T02:35:03.938Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\python\\my-app\\test-results\\task-Task-组件-E2E-测试-应该能够编辑任务标题-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\python\\my-app\\test-results\\task-Task-组件-E2E-测试-应该能够编辑任务标题-firefox\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\python\\my-app\\test-results\\task-Task-组件-E2E-测试-应该能够编辑任务标题-firefox\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\python\\my-app\\e2e\\task.spec.ts",
+                        "column": 29,
+                        "line": 29
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "f0b74b39af6b2892d277-efa03f07528a2d026c0d",
+              "file": "task.spec.ts",
+              "line": 18,
+              "column": 3
+            },
+            {
+              "title": "应该能够点击固定按钮",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 4549,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T02:35:10.506Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f0b74b39af6b2892d277-19547f777ddb7ccef52e",
+              "file": "task.spec.ts",
+              "line": 32,
+              "column": 3
+            },
+            {
+              "title": "应该显示任务列表",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 2879,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T02:35:14.403Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f0b74b39af6b2892d277-e17b99728a8be0ee56e6",
+              "file": "task.spec.ts",
+              "line": 8,
+              "column": 3
+            },
+            {
+              "title": "应该能够编辑任务标题",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 16,
+                      "parallelIndex": 5,
+                      "status": "failed",
+                      "duration": 6325,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.list-item input[type=\"text\"]').first()\nExpected: \u001b[32m\"更新的任务标题\"\u001b[39m\nReceived: \u001b[31m\"Learn Storybook\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.list-item input[type=\"text\"]').first()\u001b[22m\n\u001b[2m    9 × locator resolved to <input type=\"text\" id=\"title-1\" name=\"title\" value=\"Learn Storybook\" placeholder=\"Input title\"/>\u001b[22m\n\u001b[2m      - unexpected value \"Learn Storybook\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.list-item input[type=\"text\"]').first()\nExpected: \u001b[32m\"更新的任务标题\"\u001b[39m\nReceived: \u001b[31m\"Learn Storybook\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.list-item input[type=\"text\"]').first()\u001b[22m\n\u001b[2m    9 × locator resolved to <input type=\"text\" id=\"title-1\" name=\"title\" value=\"Learn Storybook\" placeholder=\"Input title\"/>\u001b[22m\n\u001b[2m      - unexpected value \"Learn Storybook\"\u001b[22m\n\n    at D:\\python\\my-app\\e2e\\task.spec.ts:29:29",
+                        "location": {
+                          "file": "D:\\python\\my-app\\e2e\\task.spec.ts",
+                          "column": 29,
+                          "line": 29
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 27 |\u001b[39m     \n \u001b[90m 28 |\u001b[39m     \u001b[90m// 验证新标题\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 |\u001b[39m     \u001b[36mawait\u001b[39m expect(taskInput)\u001b[33m.\u001b[39mtoHaveValue(\u001b[32m'更新的任务标题'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 30 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 31 |\u001b[39m\n \u001b[90m 32 |\u001b[39m   test(\u001b[32m'应该能够点击固定按钮'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\python\\my-app\\e2e\\task.spec.ts",
+                            "column": 29,
+                            "line": 29
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.list-item input[type=\"text\"]').first()\nExpected: \u001b[32m\"更新的任务标题\"\u001b[39m\nReceived: \u001b[31m\"Learn Storybook\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.list-item input[type=\"text\"]').first()\u001b[22m\n\u001b[2m    9 × locator resolved to <input type=\"text\" id=\"title-1\" name=\"title\" value=\"Learn Storybook\" placeholder=\"Input title\"/>\u001b[22m\n\u001b[2m      - unexpected value \"Learn Storybook\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 27 |\u001b[39m     \n \u001b[90m 28 |\u001b[39m     \u001b[90m// 验证新标题\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 |\u001b[39m     \u001b[36mawait\u001b[39m expect(taskInput)\u001b[33m.\u001b[39mtoHaveValue(\u001b[32m'更新的任务标题'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 30 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 31 |\u001b[39m\n \u001b[90m 32 |\u001b[39m   test(\u001b[32m'应该能够点击固定按钮'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at D:\\python\\my-app\\e2e\\task.spec.ts:29:29\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T02:35:16.087Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\python\\my-app\\test-results\\task-Task-组件-E2E-测试-应该能够编辑任务标题-webkit\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\python\\my-app\\test-results\\task-Task-组件-E2E-测试-应该能够编辑任务标题-webkit\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\python\\my-app\\test-results\\task-Task-组件-E2E-测试-应该能够编辑任务标题-webkit\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\python\\my-app\\e2e\\task.spec.ts",
+                        "column": 29,
+                        "line": 29
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "f0b74b39af6b2892d277-ecdf99faae2e44f6e26c",
+              "file": "task.spec.ts",
+              "line": 18,
+              "column": 3
+            },
+            {
+              "title": "应该能够点击固定按钮",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 17,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 1086,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T02:35:17.849Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f0b74b39af6b2892d277-a0daf78003ddf1295f64",
+              "file": "task.spec.ts",
+              "line": 32,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-12-02T02:34:57.576Z",
+    "duration": 25174.228,
+    "expected": 15,
+    "skipped": 0,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}
