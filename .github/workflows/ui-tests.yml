@@ -127,14 +127,21 @@ jobs:
           
       - name: 恢复缓存
         uses: actions/cache@v4
+        id: cache-restore
         with:
           path: node_modules
           key: ${{ runner.os }}-deps-${{ hashFiles('**/package-lock.json') }}
+      
+      # 确保依赖已安装
+      - name: 安装依赖（如果缓存未命中）
+        if: steps.cache-restore.outputs.cache-hit != 'true'
+        run: npm ci --legacy-peer-deps
           
-      - name: 🎨 运行 Chromatic 测试
-        run: npm run chromatic -- --exit-zero-on-changes
-        env:
-          CHROMATIC_PROJECT_TOKEN: chpt_fa03fefd88a5bcd
+      - name: 🎨 发布到 Chromatic
+        uses: chromaui/action@latest
+        with:
+          projectToken: chpt_fa03fefd88a5bcd
+          exitZeroOnChanges: true
 
   # 5️⃣ E2E 端到端测试
   test-e2e:
