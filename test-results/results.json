@@ -100,20 +100,20 @@
   },
   "suites": [
     {
-      "title": "button.spec.ts",
-      "file": "button.spec.ts",
+      "title": "button-page.spec.ts",
+      "file": "button-page.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Button 组件 E2E 测试",
-          "file": "button.spec.ts",
-          "line": 3,
+          "title": "ButtonPage 业务测试",
+          "file": "button-page.spec.ts",
+          "line": 4,
           "column": 6,
           "specs": [
             {
-              "title": "应该显示按钮",
+              "title": "应该正确显示 Button 页面",
               "ok": true,
               "tags": [],
               "tests": [
@@ -128,26 +128,32 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1015,
+                      "duration": 1090,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-02T02:35:00.956Z",
+                      "startTime": "2025-12-04T05:25:14.212Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\python\\my-app\\test-results\\button-page-ButtonPage-业务测试-应该正确显示-Button-页面-chromium\\trace.zip"
+                        }
+                      ]
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "853d4d75579e0323ed08-3503c24a02fcaf243f6b",
-              "file": "button.spec.ts",
-              "line": 8,
+              "id": "86fc0905e757770b920c-4c336df88e33c162a16d",
+              "file": "button-page.spec.ts",
+              "line": 12,
               "column": 3
             },
             {
-              "title": "应该能够点击按钮",
+              "title": "应该能通过导航返回首页",
               "ok": true,
               "tags": [],
               "tests": [
@@ -162,389 +168,32 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1008,
+                      "duration": 1318,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-02T02:35:00.961Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "853d4d75579e0323ed08-0e25c27397d997e84f92",
-              "file": "button.spec.ts",
-              "line": 17,
-              "column": 3
-            },
-            {
-              "title": "按钮应该有正确的样式",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 1099,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-02T02:35:00.961Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "853d4d75579e0323ed08-93de5c123c2b9a6db6c6",
-              "file": "button.spec.ts",
-              "line": 27,
-              "column": 3
-            },
-            {
-              "title": "应该显示按钮",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 6,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 4653,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-02T02:35:03.711Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "853d4d75579e0323ed08-1850197d6503c30d02c9",
-              "file": "button.spec.ts",
-              "line": 8,
-              "column": 3
-            },
-            {
-              "title": "应该能够点击按钮",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 7,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 5095,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-02T02:35:03.804Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "853d4d75579e0323ed08-1994c4673cb8865ecfca",
-              "file": "button.spec.ts",
-              "line": 17,
-              "column": 3
-            },
-            {
-              "title": "按钮应该有正确的样式",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 8,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 4839,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-02T02:35:03.805Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "853d4d75579e0323ed08-37e3dbab2ac9e9996da2",
-              "file": "button.spec.ts",
-              "line": 27,
-              "column": 3
-            },
-            {
-              "title": "应该显示按钮",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [
-                    {
-                      "workerIndex": 12,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 2916,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-02T02:35:12.903Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "853d4d75579e0323ed08-7c2e5e0b9cb47a5abff0",
-              "file": "button.spec.ts",
-              "line": 8,
-              "column": 3
-            },
-            {
-              "title": "应该能够点击按钮",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [
-                    {
-                      "workerIndex": 13,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 3108,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-02T02:35:13.482Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "853d4d75579e0323ed08-5b1b5fc060d45959d09a",
-              "file": "button.spec.ts",
-              "line": 17,
-              "column": 3
-            },
-            {
-              "title": "按钮应该有正确的样式",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [
-                    {
-                      "workerIndex": 14,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 2950,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-02T02:35:14.047Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "853d4d75579e0323ed08-a9e9d80d3cadce2bdc69",
-              "file": "button.spec.ts",
-              "line": 27,
-              "column": 3
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "task.spec.ts",
-      "file": "task.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "Task 组件 E2E 测试",
-          "file": "task.spec.ts",
-          "line": 3,
-          "column": 6,
-          "specs": [
-            {
-              "title": "应该显示任务列表",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 1033,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-02T02:35:00.997Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "f0b74b39af6b2892d277-b562677084a9ef810115",
-              "file": "task.spec.ts",
-              "line": 8,
-              "column": 3
-            },
-            {
-              "title": "应该能够编辑任务标题",
-              "ok": false,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 4,
-                      "parallelIndex": 4,
-                      "status": "failed",
-                      "duration": 6152,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.list-item input[type=\"text\"]').first()\nExpected: \u001b[32m\"更新的任务标题\"\u001b[39m\nReceived: \u001b[31m\"Learn Storybook\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.list-item input[type=\"text\"]').first()\u001b[22m\n\u001b[2m    9 × locator resolved to <input type=\"text\" id=\"title-1\" name=\"title\" value=\"Learn Storybook\" placeholder=\"Input title\"/>\u001b[22m\n\u001b[2m      - unexpected value \"Learn Storybook\"\u001b[22m\n",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.list-item input[type=\"text\"]').first()\nExpected: \u001b[32m\"更新的任务标题\"\u001b[39m\nReceived: \u001b[31m\"Learn Storybook\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.list-item input[type=\"text\"]').first()\u001b[22m\n\u001b[2m    9 × locator resolved to <input type=\"text\" id=\"title-1\" name=\"title\" value=\"Learn Storybook\" placeholder=\"Input title\"/>\u001b[22m\n\u001b[2m      - unexpected value \"Learn Storybook\"\u001b[22m\n\n    at D:\\python\\my-app\\e2e\\task.spec.ts:29:29",
-                        "location": {
-                          "file": "D:\\python\\my-app\\e2e\\task.spec.ts",
-                          "column": 29,
-                          "line": 29
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 27 |\u001b[39m     \n \u001b[90m 28 |\u001b[39m     \u001b[90m// 验证新标题\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 |\u001b[39m     \u001b[36mawait\u001b[39m expect(taskInput)\u001b[33m.\u001b[39mtoHaveValue(\u001b[32m'更新的任务标题'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 30 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 31 |\u001b[39m\n \u001b[90m 32 |\u001b[39m   test(\u001b[32m'应该能够点击固定按钮'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "D:\\python\\my-app\\e2e\\task.spec.ts",
-                            "column": 29,
-                            "line": 29
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.list-item input[type=\"text\"]').first()\nExpected: \u001b[32m\"更新的任务标题\"\u001b[39m\nReceived: \u001b[31m\"Learn Storybook\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.list-item input[type=\"text\"]').first()\u001b[22m\n\u001b[2m    9 × locator resolved to <input type=\"text\" id=\"title-1\" name=\"title\" value=\"Learn Storybook\" placeholder=\"Input title\"/>\u001b[22m\n\u001b[2m      - unexpected value \"Learn Storybook\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 27 |\u001b[39m     \n \u001b[90m 28 |\u001b[39m     \u001b[90m// 验证新标题\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 |\u001b[39m     \u001b[36mawait\u001b[39m expect(taskInput)\u001b[33m.\u001b[39mtoHaveValue(\u001b[32m'更新的任务标题'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 30 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 31 |\u001b[39m\n \u001b[90m 32 |\u001b[39m   test(\u001b[32m'应该能够点击固定按钮'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at D:\\python\\my-app\\e2e\\task.spec.ts:29:29\u001b[22m"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-02T02:35:00.962Z",
+                      "startTime": "2025-12-04T05:25:14.224Z",
                       "annotations": [],
                       "attachments": [
                         {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "D:\\python\\my-app\\test-results\\task-Task-组件-E2E-测试-应该能够编辑任务标题-chromium\\test-failed-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "D:\\python\\my-app\\test-results\\task-Task-组件-E2E-测试-应该能够编辑任务标题-chromium\\video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "D:\\python\\my-app\\test-results\\task-Task-组件-E2E-测试-应该能够编辑任务标题-chromium\\error-context.md"
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\python\\my-app\\test-results\\button-page-ButtonPage-业务测试-应该能通过导航返回首页-chromium\\trace.zip"
                         }
-                      ],
-                      "errorLocation": {
-                        "file": "D:\\python\\my-app\\e2e\\task.spec.ts",
-                        "column": 29,
-                        "line": 29
-                      }
+                      ]
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
-              "id": "f0b74b39af6b2892d277-7d380e660369b40021bb",
-              "file": "task.spec.ts",
-              "line": 18,
+              "id": "86fc0905e757770b920c-360eee7cc94f34fe0ef8",
+              "file": "button-page.spec.ts",
+              "line": 23,
               "column": 3
             },
             {
-              "title": "应该能够点击固定按钮",
+              "title": "验证 Page Object 的 verifyPageTitle 方法",
               "ok": true,
               "tags": [],
               "tests": [
@@ -559,307 +208,1047 @@
                       "workerIndex": 5,
                       "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 1122,
+                      "duration": 833,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-02T02:35:01.025Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "f0b74b39af6b2892d277-1fd8a17d8f352eb24aa0",
-              "file": "task.spec.ts",
-              "line": 32,
-              "column": 3
-            },
-            {
-              "title": "应该显示任务列表",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 9,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 4870,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-02T02:35:03.897Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "f0b74b39af6b2892d277-4e9d9e3f091442aff2cb",
-              "file": "task.spec.ts",
-              "line": 8,
-              "column": 3
-            },
-            {
-              "title": "应该能够编辑任务标题",
-              "ok": false,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 10,
-                      "parallelIndex": 5,
-                      "status": "failed",
-                      "duration": 9203,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.list-item input[type=\"text\"]').first()\nExpected: \u001b[32m\"更新的任务标题\"\u001b[39m\nReceived: \u001b[31m\"Learn Storybook\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.list-item input[type=\"text\"]').first()\u001b[22m\n\u001b[2m    9 × locator resolved to <input type=\"text\" id=\"title-1\" name=\"title\" value=\"Learn Storybook\" placeholder=\"Input title\"/>\u001b[22m\n\u001b[2m      - unexpected value \"Learn Storybook\"\u001b[22m\n",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.list-item input[type=\"text\"]').first()\nExpected: \u001b[32m\"更新的任务标题\"\u001b[39m\nReceived: \u001b[31m\"Learn Storybook\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.list-item input[type=\"text\"]').first()\u001b[22m\n\u001b[2m    9 × locator resolved to <input type=\"text\" id=\"title-1\" name=\"title\" value=\"Learn Storybook\" placeholder=\"Input title\"/>\u001b[22m\n\u001b[2m      - unexpected value \"Learn Storybook\"\u001b[22m\n\n    at D:\\python\\my-app\\e2e\\task.spec.ts:29:29",
-                        "location": {
-                          "file": "D:\\python\\my-app\\e2e\\task.spec.ts",
-                          "column": 29,
-                          "line": 29
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 27 |\u001b[39m     \n \u001b[90m 28 |\u001b[39m     \u001b[90m// 验证新标题\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 |\u001b[39m     \u001b[36mawait\u001b[39m expect(taskInput)\u001b[33m.\u001b[39mtoHaveValue(\u001b[32m'更新的任务标题'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 30 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 31 |\u001b[39m\n \u001b[90m 32 |\u001b[39m   test(\u001b[32m'应该能够点击固定按钮'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "D:\\python\\my-app\\e2e\\task.spec.ts",
-                            "column": 29,
-                            "line": 29
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.list-item input[type=\"text\"]').first()\nExpected: \u001b[32m\"更新的任务标题\"\u001b[39m\nReceived: \u001b[31m\"Learn Storybook\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.list-item input[type=\"text\"]').first()\u001b[22m\n\u001b[2m    9 × locator resolved to <input type=\"text\" id=\"title-1\" name=\"title\" value=\"Learn Storybook\" placeholder=\"Input title\"/>\u001b[22m\n\u001b[2m      - unexpected value \"Learn Storybook\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 27 |\u001b[39m     \n \u001b[90m 28 |\u001b[39m     \u001b[90m// 验证新标题\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 |\u001b[39m     \u001b[36mawait\u001b[39m expect(taskInput)\u001b[33m.\u001b[39mtoHaveValue(\u001b[32m'更新的任务标题'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 30 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 31 |\u001b[39m\n \u001b[90m 32 |\u001b[39m   test(\u001b[32m'应该能够点击固定按钮'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at D:\\python\\my-app\\e2e\\task.spec.ts:29:29\u001b[22m"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-02T02:35:03.938Z",
+                      "startTime": "2025-12-04T05:25:19.721Z",
                       "annotations": [],
                       "attachments": [
                         {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "D:\\python\\my-app\\test-results\\task-Task-组件-E2E-测试-应该能够编辑任务标题-firefox\\test-failed-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "D:\\python\\my-app\\test-results\\task-Task-组件-E2E-测试-应该能够编辑任务标题-firefox\\video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "D:\\python\\my-app\\test-results\\task-Task-组件-E2E-测试-应该能够编辑任务标题-firefox\\error-context.md"
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\python\\my-app\\test-results\\button-page-ButtonPage-业务测-24083-Object-的-verifyPageTitle-方法-chromium\\trace.zip"
                         }
-                      ],
-                      "errorLocation": {
-                        "file": "D:\\python\\my-app\\e2e\\task.spec.ts",
-                        "column": 29,
-                        "line": 29
-                      }
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "f0b74b39af6b2892d277-efa03f07528a2d026c0d",
-              "file": "task.spec.ts",
-              "line": 18,
-              "column": 3
-            },
-            {
-              "title": "应该能够点击固定按钮",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 11,
-                      "parallelIndex": 4,
-                      "status": "passed",
-                      "duration": 4549,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-02T02:35:10.506Z",
-                      "annotations": [],
-                      "attachments": []
+                      ]
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "f0b74b39af6b2892d277-19547f777ddb7ccef52e",
-              "file": "task.spec.ts",
+              "id": "86fc0905e757770b920c-9ff5c65e4dfe5392d901",
+              "file": "button-page.spec.ts",
+              "line": 275,
+              "column": 3
+            }
+          ],
+          "suites": [
+            {
+              "title": "按钮变体业务测试",
+              "file": "button-page.spec.ts",
               "line": 32,
-              "column": 3
-            },
-            {
-              "title": "应该显示任务列表",
-              "ok": true,
-              "tags": [],
-              "tests": [
+              "column": 8,
+              "specs": [
                 {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [
+                  "title": "应该显示所有按钮变体",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
                     {
-                      "workerIndex": 15,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 2879,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-02T02:35:14.403Z",
+                      "timeout": 30000,
                       "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "f0b74b39af6b2892d277-e17b99728a8be0ee56e6",
-              "file": "task.spec.ts",
-              "line": 8,
-              "column": 3
-            },
-            {
-              "title": "应该能够编辑任务标题",
-              "ok": false,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [
-                    {
-                      "workerIndex": 16,
-                      "parallelIndex": 5,
-                      "status": "failed",
-                      "duration": 6325,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.list-item input[type=\"text\"]').first()\nExpected: \u001b[32m\"更新的任务标题\"\u001b[39m\nReceived: \u001b[31m\"Learn Storybook\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.list-item input[type=\"text\"]').first()\u001b[22m\n\u001b[2m    9 × locator resolved to <input type=\"text\" id=\"title-1\" name=\"title\" value=\"Learn Storybook\" placeholder=\"Input title\"/>\u001b[22m\n\u001b[2m      - unexpected value \"Learn Storybook\"\u001b[22m\n",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.list-item input[type=\"text\"]').first()\nExpected: \u001b[32m\"更新的任务标题\"\u001b[39m\nReceived: \u001b[31m\"Learn Storybook\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.list-item input[type=\"text\"]').first()\u001b[22m\n\u001b[2m    9 × locator resolved to <input type=\"text\" id=\"title-1\" name=\"title\" value=\"Learn Storybook\" placeholder=\"Input title\"/>\u001b[22m\n\u001b[2m      - unexpected value \"Learn Storybook\"\u001b[22m\n\n    at D:\\python\\my-app\\e2e\\task.spec.ts:29:29",
-                        "location": {
-                          "file": "D:\\python\\my-app\\e2e\\task.spec.ts",
-                          "column": 29,
-                          "line": 29
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 27 |\u001b[39m     \n \u001b[90m 28 |\u001b[39m     \u001b[90m// 验证新标题\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 |\u001b[39m     \u001b[36mawait\u001b[39m expect(taskInput)\u001b[33m.\u001b[39mtoHaveValue(\u001b[32m'更新的任务标题'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 30 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 31 |\u001b[39m\n \u001b[90m 32 |\u001b[39m   test(\u001b[32m'应该能够点击固定按钮'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
-                      },
-                      "errors": [
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
                         {
-                          "location": {
-                            "file": "D:\\python\\my-app\\e2e\\task.spec.ts",
-                            "column": 29,
-                            "line": 29
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.list-item input[type=\"text\"]').first()\nExpected: \u001b[32m\"更新的任务标题\"\u001b[39m\nReceived: \u001b[31m\"Learn Storybook\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.list-item input[type=\"text\"]').first()\u001b[22m\n\u001b[2m    9 × locator resolved to <input type=\"text\" id=\"title-1\" name=\"title\" value=\"Learn Storybook\" placeholder=\"Input title\"/>\u001b[22m\n\u001b[2m      - unexpected value \"Learn Storybook\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 27 |\u001b[39m     \n \u001b[90m 28 |\u001b[39m     \u001b[90m// 验证新标题\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 |\u001b[39m     \u001b[36mawait\u001b[39m expect(taskInput)\u001b[33m.\u001b[39mtoHaveValue(\u001b[32m'更新的任务标题'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 30 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 31 |\u001b[39m\n \u001b[90m 32 |\u001b[39m   test(\u001b[32m'应该能够点击固定按钮'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at D:\\python\\my-app\\e2e\\task.spec.ts:29:29\u001b[22m"
+                          "workerIndex": 2,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 1085,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-04T05:25:14.203Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "D:\\python\\my-app\\test-results\\button-page-ButtonPage-业务测试-按钮变体业务测试-应该显示所有按钮变体-chromium\\trace.zip"
+                            }
+                          ]
                         }
                       ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-02T02:35:16.087Z",
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "86fc0905e757770b920c-fbcf7090f6444fb966ba",
+                  "file": "button-page.spec.ts",
+                  "line": 33,
+                  "column": 5
+                },
+                {
+                  "title": "Primary 按钮点击应该弹出提示",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
                       "annotations": [],
-                      "attachments": [
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
                         {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "D:\\python\\my-app\\test-results\\task-Task-组件-E2E-测试-应该能够编辑任务标题-webkit\\test-failed-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "D:\\python\\my-app\\test-results\\task-Task-组件-E2E-测试-应该能够编辑任务标题-webkit\\video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "D:\\python\\my-app\\test-results\\task-Task-组件-E2E-测试-应该能够编辑任务标题-webkit\\error-context.md"
+                          "workerIndex": 3,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 1024,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-04T05:25:14.231Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "D:\\python\\my-app\\test-results\\button-page-ButtonPage-业务测试-按钮变体业务测试-Primary-按钮点击应该弹出提示-chromium\\trace.zip"
+                            }
+                          ]
                         }
                       ],
-                      "errorLocation": {
-                        "file": "D:\\python\\my-app\\e2e\\task.spec.ts",
-                        "column": 29,
-                        "line": 29
-                      }
+                      "status": "expected"
                     }
                   ],
-                  "status": "unexpected"
+                  "id": "86fc0905e757770b920c-6ea1fac7031b725ff11a",
+                  "file": "button-page.spec.ts",
+                  "line": 39,
+                  "column": 5
+                },
+                {
+                  "title": "Secondary 按钮点击应该弹出提示",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 4,
+                          "status": "passed",
+                          "duration": 962,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-04T05:25:14.267Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "D:\\python\\my-app\\test-results\\button-page-ButtonPage-业务测试-按钮变体业务测试-Secondary-按钮点击应该弹出提示-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "86fc0905e757770b920c-380398b4efc9e0a65f5d",
+                  "file": "button-page.spec.ts",
+                  "line": 49,
+                  "column": 5
+                },
+                {
+                  "title": "Danger 按钮点击应该弹出提示",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 5,
+                          "parallelIndex": 5,
+                          "status": "passed",
+                          "duration": 1060,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-04T05:25:14.214Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "D:\\python\\my-app\\test-results\\button-page-ButtonPage-业务测试-按钮变体业务测试-Danger-按钮点击应该弹出提示-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "86fc0905e757770b920c-a7b6f8b22b998d8713d8",
+                  "file": "button-page.spec.ts",
+                  "line": 58,
+                  "column": 5
                 }
-              ],
-              "id": "f0b74b39af6b2892d277-ecdf99faae2e44f6e26c",
-              "file": "task.spec.ts",
-              "line": 18,
-              "column": 3
+              ]
             },
             {
-              "title": "应该能够点击固定按钮",
-              "ok": true,
-              "tags": [],
-              "tests": [
+              "title": "按钮尺寸业务测试",
+              "file": "button-page.spec.ts",
+              "line": 68,
+              "column": 8,
+              "specs": [
                 {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [
+                  "title": "应该显示所有尺寸的按钮",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
                     {
-                      "workerIndex": 17,
-                      "parallelIndex": 4,
-                      "status": "passed",
-                      "duration": 1086,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-02T02:35:17.849Z",
+                      "timeout": 30000,
                       "annotations": [],
-                      "attachments": []
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 832,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-04T05:25:15.832Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "D:\\python\\my-app\\test-results\\button-page-ButtonPage-业务测试-按钮尺寸业务测试-应该显示所有尺寸的按钮-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
                     }
                   ],
-                  "status": "expected"
+                  "id": "86fc0905e757770b920c-4634b1a3b352144363da",
+                  "file": "button-page.spec.ts",
+                  "line": 69,
+                  "column": 5
+                },
+                {
+                  "title": "Small 按钮应该有 btn-small 样式类",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 4,
+                          "status": "passed",
+                          "duration": 744,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-04T05:25:15.928Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "D:\\python\\my-app\\test-results\\button-page-ButtonPage-业务测-e3f09-试-Small-按钮应该有-btn-small-样式类-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "86fc0905e757770b920c-86035aa3461573b196b1",
+                  "file": "button-page.spec.ts",
+                  "line": 75,
+                  "column": 5
+                },
+                {
+                  "title": "Large 按钮应该有 btn-large 样式类",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 753,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-04T05:25:16.007Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "D:\\python\\my-app\\test-results\\button-page-ButtonPage-业务测-c9cf4-试-Large-按钮应该有-btn-large-样式类-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "86fc0905e757770b920c-5ca22bc2d93db0b8aa6a",
+                  "file": "button-page.spec.ts",
+                  "line": 80,
+                  "column": 5
                 }
-              ],
-              "id": "f0b74b39af6b2892d277-a0daf78003ddf1295f64",
-              "file": "task.spec.ts",
-              "line": 32,
-              "column": 3
+              ]
+            },
+            {
+              "title": "按钮状态业务测试",
+              "file": "button-page.spec.ts",
+              "line": 86,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "正常按钮应该可以点击",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 5,
+                          "parallelIndex": 5,
+                          "status": "passed",
+                          "duration": 759,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-04T05:25:16.086Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "D:\\python\\my-app\\test-results\\button-page-ButtonPage-业务测试-按钮状态业务测试-正常按钮应该可以点击-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "86fc0905e757770b920c-10e92bdb4c699b40bd8a",
+                  "file": "button-page.spec.ts",
+                  "line": 87,
+                  "column": 5
+                },
+                {
+                  "title": "禁用按钮应该不可点击",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 805,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-04T05:25:16.175Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "D:\\python\\my-app\\test-results\\button-page-ButtonPage-业务测试-按钮状态业务测试-禁用按钮应该不可点击-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "86fc0905e757770b920c-0083badcbfcdf1df6df6",
+                  "file": "button-page.spec.ts",
+                  "line": 91,
+                  "column": 5
+                }
+              ]
+            },
+            {
+              "title": "计数器业务功能测试",
+              "file": "button-page.spec.ts",
+              "line": 100,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "计数器初始值应该为 0",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 741,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-04T05:25:16.396Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "D:\\python\\my-app\\test-results\\button-page-ButtonPage-业务测试-计数器业务功能测试-计数器初始值应该为-0-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "86fc0905e757770b920c-220888d7121b73bc5de5",
+                  "file": "button-page.spec.ts",
+                  "line": 101,
+                  "column": 5
+                },
+                {
+                  "title": "点击增加按钮应该增加计数",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 4,
+                          "status": "passed",
+                          "duration": 1167,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-04T05:25:16.783Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "D:\\python\\my-app\\test-results\\button-page-ButtonPage-业务测试-计数器业务功能测试-点击增加按钮应该增加计数-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "86fc0905e757770b920c-b72ee4b6cf36816bb084",
+                  "file": "button-page.spec.ts",
+                  "line": 106,
+                  "column": 5
+                },
+                {
+                  "title": "点击减少按钮应该减少计数",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1594,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-04T05:25:16.791Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "D:\\python\\my-app\\test-results\\button-page-ButtonPage-业务测试-计数器业务功能测试-点击减少按钮应该减少计数-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "86fc0905e757770b920c-48ff0853cdfd5481952d",
+                  "file": "button-page.spec.ts",
+                  "line": 115,
+                  "column": 5
+                },
+                {
+                  "title": "点击重置按钮应该将计数重置为 0",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 1547,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-04T05:25:16.936Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "D:\\python\\my-app\\test-results\\button-page-ButtonPage-业务测试-计数器业务功能测试-点击重置按钮应该将计数重置为-0-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "86fc0905e757770b920c-5b7bb9da4f6ebb61c664",
+                  "file": "button-page.spec.ts",
+                  "line": 127,
+                  "column": 5
+                },
+                {
+                  "title": "使用 setCounterTo 方法设置计数器值",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 5,
+                          "parallelIndex": 5,
+                          "status": "passed",
+                          "duration": 2289,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-04T05:25:17.138Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "D:\\python\\my-app\\test-results\\button-page-ButtonPage-业务测-15a28-测试-使用-setCounterTo-方法设置计数器值-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "86fc0905e757770b920c-905ae4920c488058b640",
+                  "file": "button-page.spec.ts",
+                  "line": 140,
+                  "column": 5
+                },
+                {
+                  "title": "完整的计数器操作流程",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 1797,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-04T05:25:17.147Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "D:\\python\\my-app\\test-results\\button-page-ButtonPage-业务测试-计数器业务功能测试-完整的计数器操作流程-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "86fc0905e757770b920c-dcc28e05fc726ecfafe0",
+                  "file": "button-page.spec.ts",
+                  "line": 154,
+                  "column": 5
+                },
+                {
+                  "title": "计数器可以处理负数",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 1105,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-04T05:25:17.516Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "D:\\python\\my-app\\test-results\\button-page-ButtonPage-业务测试-计数器业务功能测试-计数器可以处理负数-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "86fc0905e757770b920c-9e74b00feb0d935490c0",
+                  "file": "button-page.spec.ts",
+                  "line": 175,
+                  "column": 5
+                }
+              ]
+            },
+            {
+              "title": "组合示例业务测试",
+              "file": "button-page.spec.ts",
+              "line": 185,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "应该显示所有尺寸和变体的组合",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 4,
+                          "status": "passed",
+                          "duration": 781,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-04T05:25:18.201Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "D:\\python\\my-app\\test-results\\button-page-ButtonPage-业务测试-组合示例业务测试-应该显示所有尺寸和变体的组合-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "86fc0905e757770b920c-31b10f003bb5d28c3b0d",
+                  "file": "button-page.spec.ts",
+                  "line": 186,
+                  "column": 5
+                },
+                {
+                  "title": "Small Primary 按钮应该有正确的样式类",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 740,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-04T05:25:18.570Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "D:\\python\\my-app\\test-results\\button-page-ButtonPage-业务测-82ddd-试-Small-Primary-按钮应该有正确的样式类-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "86fc0905e757770b920c-a1c69243745b08addb98",
+                  "file": "button-page.spec.ts",
+                  "line": 192,
+                  "column": 5
+                },
+                {
+                  "title": "Large Danger 按钮应该有正确的样式类",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 780,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-04T05:25:18.739Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "D:\\python\\my-app\\test-results\\button-page-ButtonPage-业务测-ab6b8-测试-Large-Danger-按钮应该有正确的样式类-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "86fc0905e757770b920c-1d8775ee4b9b096d137a",
+                  "file": "button-page.spec.ts",
+                  "line": 198,
+                  "column": 5
+                }
+              ]
+            },
+            {
+              "title": "使用说明业务测试",
+              "file": "button-page.spec.ts",
+              "line": 205,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "应该显示使用说明部分",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 809,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-04T05:25:18.830Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "D:\\python\\my-app\\test-results\\button-page-ButtonPage-业务测试-使用说明业务测试-应该显示使用说明部分-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "86fc0905e757770b920c-4fe44ccb7d81a31b132b",
+                  "file": "button-page.spec.ts",
+                  "line": 206,
+                  "column": 5
+                },
+                {
+                  "title": "应该能滚动到使用说明部分",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 4,
+                          "status": "passed",
+                          "duration": 936,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-04T05:25:19.093Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "D:\\python\\my-app\\test-results\\button-page-ButtonPage-业务测试-使用说明业务测试-应该能滚动到使用说明部分-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "86fc0905e757770b920c-1202bc0e36f5a06d14bd",
+                  "file": "button-page.spec.ts",
+                  "line": 210,
+                  "column": 5
+                }
+              ]
+            },
+            {
+              "title": "综合业务场景测试",
+              "file": "button-page.spec.ts",
+              "line": 219,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "用户浏览不同按钮并使用计数器的完整流程",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 1504,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-04T05:25:19.197Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "D:\\python\\my-app\\test-results\\button-page-ButtonPage-业务测试-综合业务场景测试-用户浏览不同按钮并使用计数器的完整流程-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "86fc0905e757770b920c-169c673a12bcc1513dd5",
+                  "file": "button-page.spec.ts",
+                  "line": 220,
+                  "column": 5
+                },
+                {
+                  "title": "用户测试计数器的边界情况",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 12537,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-04T05:25:19.437Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "D:\\python\\my-app\\test-results\\button-page-ButtonPage-业务测试-综合业务场景测试-用户测试计数器的边界情况-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "86fc0905e757770b920c-ad0f5e521d24d9c40edd",
+                  "file": "button-page.spec.ts",
+                  "line": 245,
+                  "column": 5
+                },
+                {
+                  "title": "用户快速连续操作计数器",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 1552,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-04T05:25:19.651Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "D:\\python\\my-app\\test-results\\button-page-ButtonPage-业务测试-综合业务场景测试-用户快速连续操作计数器-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "86fc0905e757770b920c-31b94d26c5426e613791",
+                  "file": "button-page.spec.ts",
+                  "line": 259,
+                  "column": 5
+                }
+              ]
             }
           ]
         }
@@ -868,11 +1257,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-02T02:34:57.576Z",
-    "duration": 25174.228,
-    "expected": 15,
+    "startTime": "2025-12-04T05:25:12.451Z",
+    "duration": 19942.956000000002,
+    "expected": 27,
     "skipped": 0,
-    "unexpected": 3,
+    "unexpected": 0,
     "flaky": 0
   }
 }
