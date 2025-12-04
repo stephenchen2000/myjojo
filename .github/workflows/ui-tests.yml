@@ -141,7 +141,7 @@ jobs:
         uses: chromaui/action@latest
         with:
           projectToken: chpt_fa03fefd88a5bcd
-          exitZeroOnChanges: true
+          exitZeroOnChanges: false
 
   # 5️⃣ E2E 端到端测试
   test-e2e:
