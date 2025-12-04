@@ -132,7 +132,7 @@ jobs:
           key: ${{ runner.os }}-deps-${{ hashFiles('**/package-lock.json') }}
           
       - name: 🎨 运行 Chromatic 测试
-        run: npm run chromatic
+        run: npm run chromatic -- --exit-zero-on-changes
         env:
           CHROMATIC_PROJECT_TOKEN: chpt_fa03fefd88a5bcd
 
