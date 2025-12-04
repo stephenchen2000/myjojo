@@ -36,9 +36,9 @@ jobs:
         if: steps.cache.outputs.cache-hit != 'true'
         run: npm ci --legacy-peer-deps
         
-      - name: 安装 Playwright
+      - name: 安装 Playwright 浏览器
         if: steps.cache.outputs.cache-hit != 'true'
-        run: npx playwright install --with-deps chromium
+        run: npx playwright install --with-deps
 
   # 1️⃣ 交互测试（play 函数）
   test-interaction:
@@ -159,11 +159,21 @@ jobs:
           
       - name: 恢复缓存
         uses: actions/cache@v4
+        id: cache-restore-e2e
         with:
           path: |
             ~/.cache/ms-playwright
             node_modules
           key: ${{ runner.os }}-deps-${{ hashFiles('**/package-lock.json') }}
+      
+      # 确保依赖已安装
+      - name: 安装依赖（如果缓存未命中）
+        if: steps.cache-restore-e2e.outputs.cache-hit != 'true'
+        run: npm ci --legacy-peer-deps
+      
+      # 确保浏览器已安装
+      - name: 安装 Playwright 浏览器
+        run: npx playwright install --with-deps ${{ matrix.browser }}
           
       - name: 🎭 运行 E2E 测试 - ${{ matrix.browser }}
         run: npm run test:e2e -- --project=${{ matrix.browser }}
