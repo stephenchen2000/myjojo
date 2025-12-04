@@ -21,11 +21,13 @@ test.describe('Task 组件 E2E 测试', () => {
     // 找到第一个任务的输入框
     const taskInput = page.locator('.list-item input[type="text"]').first();
     
+    // 验证初始值
+    await expect(taskInput).toHaveValue('Learn Storybook');
+    
     // 清空并输入新标题
-    await taskInput.clear();
     await taskInput.fill('更新的任务标题');
     
-    // 验证新标题
+    // 验证新标题已更新
     await expect(taskInput).toHaveValue('更新的任务标题');
   });
 

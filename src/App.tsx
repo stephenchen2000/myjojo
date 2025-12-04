@@ -6,6 +6,40 @@ import Task from './components/Task'
 
 function App() {
   const [count, setCount] = useState(0)
+  
+  // 添加任务状态管理
+  const [tasks, setTasks] = useState([
+    { id: '1', title: 'Learn Storybook', state: 'TASK_INBOX' },
+    { id: '2', title: 'Build components', state: 'TASK_PINNED' },
+    { id: '3', title: 'Write tests', state: 'TASK_ARCHIVED' },
+  ])
+
+  // 处理任务标题编辑
+  const handleEditTitle = (title: string, id: string) => {
+    setTasks(tasks.map(task => 
+      task.id === id ? { ...task, title } : task
+    ))
+  }
+
+  // 处理任务归档
+  const handleArchiveTask = (id: string) => {
+    setTasks(tasks.map(task =>
+      task.id === id ? { ...task, state: 'TASK_ARCHIVED' } : task
+    ))
+  }
+
+  // 处理任务固定
+  const handleTogglePinTask = (id: string) => {
+    setTasks(tasks.map(task => {
+      if (task.id === id) {
+        return {
+          ...task,
+          state: task.state === 'TASK_PINNED' ? 'TASK_INBOX' : 'TASK_PINNED'
+        }
+      }
+      return task
+    }))
+  }
 
   return (
     <div style={{ padding: '2rem' }}>
@@ -31,24 +65,15 @@ function App() {
       <section style={{ marginTop: '2rem' }}>
         <h2>Tasks</h2>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginTop: '1rem', maxWidth: '400px' }}>
-          <Task 
-            task={{ id: '1', title: 'Learn Storybook', state: 'TASK_INBOX' }}
-            onArchiveTask={(id: string) => console.log('archived', id)}
-            onTogglePinTask={(id: string) => console.log('pinned', id)}
-            onEditTitle={(title: string, id: string) => console.log('edit', title, id)}
-          />
-          <Task 
-            task={{ id: '2', title: 'Build components', state: 'TASK_PINNED' }}
-            onArchiveTask={(id: string) => console.log('archived', id)}
-            onTogglePinTask={(id: string) => console.log('pinned', id)}
-            onEditTitle={(title: string, id: string) => console.log('edit', title, id)}
-          />
-          <Task 
-            task={{ id: '3', title: 'Write tests', state: 'TASK_ARCHIVED' }}
-            onArchiveTask={(id: string) => console.log('archived', id)}
-            onTogglePinTask={(id: string) => console.log('pinned', id)}
-            onEditTitle={(title: string, id: string) => console.log('edit', title, id)}
-          />
+          {tasks.map(task => (
+            <Task 
+              key={task.id}
+              task={task}
+              onArchiveTask={handleArchiveTask}
+              onTogglePinTask={handleTogglePinTask}
+              onEditTitle={handleEditTitle}
+            />
+          ))}
         </div>
       </section>
     </div>
